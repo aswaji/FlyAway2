@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+
+:root {
+  --primary-color: #6C63FF;
+  --secondary-color: #3f3d56;
+  --section-bg: #edf1f2;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  animation: fadeIn 0.85s;
+}
+
+nav{
+	display:flex;
+	padding:20px;
+	box-shadow:0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+	display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+
+
+nav a{
+	display:block;
+	text-decoration:none;
+	color:var(--secondary-color);
+}
+
+nav .nav-logo{
+	display:flex;
+	align-items:center;
+	gap:10px;
+}
+
+
+.img-fluid{
+	max-width:100%;
+}
+
+.choose {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.choose .choose_title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.choose_cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+.choose_cards .card {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 70%;
+  padding: 2rem;
+  transition: 0.3s;
+}
+.choose .card:hover {
+  background: rgb(247, 246, 246);
+}
+.choose .card h2 {
+  margin-bottom: 1rem;
+}
+.choose .card a {
+  display: block;
+  background: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+}
+.choose .card img {
+  margin-top: 4rem;
+  width: 500px;
+  height: 250px;
+}
+
+			
+.form_page {
+  display: flex;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+}
+.form_page > div {
+  flex-basis: 50%;
+}
+
+.form_page .form-container {
+  padding: 50px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.form_page .panel-container {
+  height: 100vh;
+  width: 50%;
+  display: flex;
+  padding: 0 100px;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+img {
+  max-width: 100%;
+}
+.form-container .form-heading {
+  margin-bottom: 2rem;
+}
+.form-container .form-heading .previous {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  background: #f7505c;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.form-container .form-heading h1 {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 0.5rem;
+}
+.form-container .form-heading h1:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background: var(--primary-color);
+}
+.form-container form h2 {
+  margin: 20px 0;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+.radio-group {
+  margin-bottom: 3rem;
+}
+.form-group label {
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+.form-group input {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.form-group input[type="date"] {
+  color: #959b9c;
+  font-family: "Roboto", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+}
+.form-group select {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  appearance: none;
+  position: relative;
+}
+.form-group textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background: #e6e6e6;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+.form-group input[type="number"] {
+  appearance: none;
+}
+.check-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.check-group input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+button.nextBtn {
+  background: var(--primary-color);
+  border-radius: 1.2rem;
+  font-size: 1rem;
+  border: none;
+  padding: 1.5rem 2rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.btn,
+button.signinBtn,
+button.signupBtn {
+  background: var(--primary-color);
+  font-size: 1rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.btn{
+	display:block;
+	width:100%;
+	padding: 1rem 1.5rem;
+}
+			
